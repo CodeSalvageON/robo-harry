@@ -14,18 +14,31 @@ let initHappyWords = "";
 
 function initHarry () {
   document.write("");
+  document.body.append(`<div id="harry"></div>`);
+  document.body.style.backgroundColor = "black";
   
   if (harryAngerWordsDictionary === null || harryAngerWordsDictionary === undefined || harryAngerWordsDictionary === "") {
     localStorage.setItem("harry_anger_words_dictionary", String(backupAngerWords));
+    
+    initAngerWords = "Created a dictionary for angry words...";
   }
   
   else {
-    console.log("");
+    initAngerWords = "Checked dictionary for angry words...";
   }
   
   if (harryHappyWordsDictionary === null || harryHappyWordsDictionary === undefined || harryHappyWordsDictionary === "") {
     localStorage.setItem("harry_happy_words_dictionary", String(backupHappyWords));
+    
+    initHappyWords = "Created a dictionary for happy words...";
   }
+  
+  else {
+    initHappyWords = "Checked dictionary for angry words...";
+  }
+  
+  console.log(initAngryWords);
+  console.log(initHappyWords);
 }
 
 initHarry();
