@@ -14,7 +14,7 @@ let initHappyWords = "";
 
 function initHarry () {
   document.write("");
-  document.body.append(`<div id="harry"></div>`);
+  document.write(`<div id="harry"></div>`);
   document.body.style.backgroundColor = "black";
   
   if (harryAngerWordsDictionary === null || harryAngerWordsDictionary === undefined || harryAngerWordsDictionary === "") {
