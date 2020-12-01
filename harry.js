@@ -1,5 +1,5 @@
-let harryAngerLevel = 0;
-let harryHappyLevel = 0;
+var harryAngerLevel = 0;
+var harryHappyLevel = 0;
 
 const space = " ";
 
@@ -9,8 +9,8 @@ const backupHappyWords = "waffle yay hooray";
 const harryAngerWordsDictionary = localStorage.getItem("harry_anger_words_dictionary");
 const harryHappyWordsDictionary = localStorage.getItem("harry_happy_words_dictionary");
 
-let initAngerWords = "";
-let initHappyWords = "";
+var initAngerWords = "";
+var initHappyWords = "";
 
 function initHarry () {
   document.write("");
