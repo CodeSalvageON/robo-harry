@@ -1,5 +1,5 @@
-var harryAngerLevel = 0;
-var harryHappyLevel = 0;
+let harryAngerLevel = 0;
+let harryHappyLevel = 0;
 
 const space = " ";
 
@@ -9,8 +9,8 @@ const backupHappyWords = "waffle yay hooray";
 const harryAngerWordsDictionary = localStorage.getItem("harry_anger_words_dictionary");
 const harryHappyWordsDictionary = localStorage.getItem("harry_happy_words_dictionary");
 
-var initAngerWords = "";
-var initHappyWords = "";
+let initAngerWords = "";
+let initHappyWords = "";
 
 function initHarry () {
   document.write("");
@@ -37,7 +37,7 @@ function initHarry () {
     initHappyWords = "Checked dictionary for angry words...";
   }
   
-  console.log(initAngryWords);
+  console.log(initAngerWords);
   console.log(initHappyWords);
 }
 
